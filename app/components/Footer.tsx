@@ -63,7 +63,7 @@ export default function Footer() {
       <div className="relative z-10 pt-16 md:pt-24 pb-12 md:pb-16 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
           
-          <section className="text-center mb-16 md:mb-24 relative z-20">
+          <section id="claim-handle" className="text-center mb-16 md:mb-24 relative z-20">
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 text-cream-puff" style={{ fontFamily: "var(--font-pangaia)" }}>
               The line starts here.
             </h2>

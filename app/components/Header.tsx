@@ -22,7 +22,15 @@ export default function Header() {
 
   const handleClaimClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    console.log("Open Waitlist Modal"); 
+    const claimSection = document.getElementById('claim-handle');
+    if (claimSection) {
+      claimSection.scrollIntoView({ behavior: "smooth", block: "center" });
+    } else {
+      const footer = document.querySelector('footer');
+      if (footer) {
+        footer.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
   };
 
   const scrollToSection = (id: string) => {
